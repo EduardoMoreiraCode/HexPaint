@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gerador de código hexadecimal de cores. Próprio para desenvolvedores e designers.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/EduDevCode/HexPaint/blob/main/site-scr.png">
+
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <link href="icon-bucket-hex-paint.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="icon-bucket-hex-paint.png" rel="apple-touch-icon" />
+
+    <title>Hex Paint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p id="hex">#FFFFFF</p>
+        <button id="copyBtn" onclick="copyToClipBoard()">Copiar para a Área de Transferência <img src="copy-icon.png" height="18px" width="18px"></button>
+        <button id="generateBtn" onclick="generateHex()">Gerar Hexadecimal</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
