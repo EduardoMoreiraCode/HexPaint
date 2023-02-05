@@ -1,3 +1,25 @@
+var textContent = document.getElementById("hex");
+var textColor = document.getElementById("hex");
+var bcgColor = document.querySelector("body");
+var savedColorText = localStorage.getItem("colorText");
+var savedTextContent = localStorage.getItem("contentText");
+var savedBackColor = localStorage.getItem("colorBcg");
+
+if(savedBackColor)
+{
+    document.body.style.backgroundColor = savedBackColor;
+}
+
+if(savedTextContent)
+{
+    document.getElementById("hex").innerText = savedTextContent;
+}
+
+if(savedColorText)
+{
+    document.body.style.color = savedColorText;
+}
+
 function generateHex()
 {
     let vet = "0123456789ABCDEF";
@@ -8,15 +30,19 @@ function generateHex()
         hex += vet.charAt(Math.floor(Math.random() * n));
     }
 
-    document.getElementById("hex").innerText = `#${hex}`;
-    document.querySelector("body").style.background = `#${hex}`;
-    document.getElementById("hex").style.color = `#${hex}`;  
+    textContent.innerText = `#${hex}`;
+    bcgColor.style.background = `#${hex}`;
+    textColor.style.color = `#${hex}`;  
+   
+   localStorage.setItem("contentText", textContent.innerText);
+   localStorage.setItem("colorText", textColor.style.color);
+   localStorage.setItem("colorBcg", bcgColor.style.background);
 }
 
 function copyToClipBoard()
 {
-    var right = "copiado com sucesso!"
-    var wrong = "Algo deu errado durante o processo!"
+    var right = "successfully copied!"
+    var wrong = "Something went wrong while copying!"
     var content = document.getElementById('hex').innerHTML;
 
     navigator.clipboard.writeText(content)
