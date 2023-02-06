@@ -4,7 +4,7 @@ var bcgColor = document.querySelector("body");
 var savedColorText = localStorage.getItem("colorText");
 var savedTextContent = localStorage.getItem("contentText");
 var savedBackColor = localStorage.getItem("colorBcg");
-
+//foi nessa parte de LocalStg que desenvolvi minha lógica de programador
 if(savedBackColor)
 {
     document.body.style.backgroundColor = savedBackColor;
@@ -35,6 +35,17 @@ function generateHex()
     textColor.style.color = `#${hex}`;  
    
    localStorage.setItem("contentText", textContent.innerText);
+   localStorage.setItem("colorText", textColor.style.color);
+   localStorage.setItem("colorBcg", bcgColor.style.background);
+}
+
+function colorReset()
+{
+    textContent.innerText = "#FFFFFF";
+    bcgColor.style.background = "#FFFFFF";
+    textColor.style.color = "#000000";
+
+    localStorage.setItem("contentText", textContent.innerText);
    localStorage.setItem("colorText", textColor.style.color);
    localStorage.setItem("colorBcg", bcgColor.style.background);
 }
