@@ -15,11 +15,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* margin: 10rem 0; */
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
+    margin: 10rem 0;
 }
 
 #hex
@@ -56,6 +52,7 @@
     border-radius: 10px;
     transition: 0.2s;
     border: 2px solid #111;
+    user-select: none;
 }
 
 #resetBtn
