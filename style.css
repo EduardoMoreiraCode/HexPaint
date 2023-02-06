@@ -15,7 +15,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 10rem 0;
+    /* margin: 10rem 0; */
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
 }
 
 #hex
@@ -44,20 +48,44 @@
 #generateBtn
 {
     padding: 8px 12px;
-    background: black;
+    background: #111;
     color: white;
     border: none;
     cursor: pointer;
     font-size: 1.8rem;
     border-radius: 10px;
     transition: 0.2s;
+    border: 2px solid #111;
+}
+
+#resetBtn
+{
+    padding: 8px 12px;
+    font-size: 1.8rem;
+    margin-top: 30px;
+    background: #ececec;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    width: 200px;
+    user-select: none;
+}
+
+#resetBtn:hover
+{
+    box-shadow: 0px 0px 11px 2px black;
+    color: #ececec;
+    background: #111;
+    border-color: #ececec;
+
 }
 
 #generateBtn:hover
 {
     transition: 0.2s;
     box-shadow: 0px 0px 11px 2px black;
-    background: white;
+    background: #ececec;
     color: black;
-    border: .5px solid black;
 }
