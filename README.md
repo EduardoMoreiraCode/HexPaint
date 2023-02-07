@@ -23,11 +23,11 @@
 <p>A funcionalidade geral da aplicação é a geração completamente aleatória de cores diversas do código hexadecimal, contando também com a opção de <a href="#reset">Zerar cores</a> e a possibilidade de <a href="#copytoclipboard">Copiar para a área de transferência</a>. Além de tudo é possível guardar a cor gerada por último no Armazenamento Local do navegador (Local Storage).</p>
 
 <h1 id="reset">Zerar Cores</h1>
-<h1 align="center"><img alt="Zerar cores" title="Zerar Cores" src="./READMEfolder/zerar-button.png"/><br><p style="font-size:15px;">Aparência de quando é ativado.</p></h1>
+<h1 align="center"><img alt="Zerar cores" title="Zerar Cores" src="./READMEfolder/zerar-button.png"/><br><p style="font-size:12px;">Aparência de quando é ativado.</p></h1>
 <p>Funciona como um "reset" para a cor padrão (#FFFFFF). Essa reinicialização também fica salva no Armazenamento local.</p>
 
 <h1 id="copytoclipboard">Copiar para a área de transferência</h1>
-<h1 align="center"><img alt="Copiar" title="Copiar" src="./READMEfolder/copy-button.png"/><br><p style="font-size:15px;">Mensagem exibida após clicar no botão <strong>Copiar para a Área de Transferência</strong>.</p></h1>
+<h1 align="center"><img alt="Copiar" title="Copiar" src="./READMEfolder/copy-button.png"/><br><p style="font-size:12px;">Mensagem exibida após clicar no botão <strong>Copiar para a Área de Transferência</strong>.</p></h1>
 <p>Funcionalidade desenvolvida inteiramente com Javascript. Consiste na cópia automática do conteúdo, ou seja, da cor mais recente gerada pelo usuário, possibilitando sua inserção em qualquer lugar, através da Área de Transferência (Clipboard).</p>
 
 <h1 id="technologies">Tecnologias</h1>
