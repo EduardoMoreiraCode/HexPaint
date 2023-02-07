@@ -52,8 +52,8 @@ function colorReset()
 
 function copyToClipBoard()
 {
-    var right = "successfully copied!"
-    var wrong = "Something went wrong while copying!"
+    var right = "copiado com sucesso!"
+    var wrong = "Algo deu errado durante a cópia!"
     var content = document.getElementById('hex').innerHTML;
 
     navigator.clipboard.writeText(content)
